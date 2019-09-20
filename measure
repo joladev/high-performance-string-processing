@@ -1,0 +1,5 @@
+#!/bin/bash
+
+FMT="Maximum RSS size: %M\nReal time: %e\nKernel time: %S\nUser time: %U"
+
+gtime -f "$FMT" mix run $1 < ../words.txt
